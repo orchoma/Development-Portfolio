@@ -1,0 +1,36 @@
+.portfolio-item-1{
+    background-image: url(/images/project.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+
+    @include respond(tab-port) {
+        height: 30vh;
+    }
+
+}
+
+.portfolio-item-description{
+    margin-top: 6rem;
+
+    @include respond(tab-port) {
+        margin-top: -4rem;
+        text-align: center;
+    }
+}
+
+.portfolio-link{
+
+    text-decoration: none;
+    border: solid black 1px;
+    padding: .50rem .75rem;
+
+    &:hover{
+        background-color: rgb(209, 203, 203);
+    }
+
+    &:not(:last-child) {
+        margin-right: 4rem;
+
+}}

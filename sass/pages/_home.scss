@@ -1,0 +1,84 @@
+.heading{
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px black;
+    padding-bottom: 1.2rem;
+
+
+    @include respond(tab-port) {
+        display: block;
+        text-align: center;
+        margin-top: 3rem;
+        border-bottom: none;
+
+    }
+}
+
+.home-link{
+    text-decoration: none;
+    color: black;
+
+    &:hover{
+        color: rgb(174, 174, 174);
+    }
+}
+
+.nav{
+    list-style-type: none;
+    text-align: right;
+
+    @include respond(tab-port) {
+        text-align: center ;
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+.nav-item{
+    display: inline;
+
+    &:not(:last-child) {
+        margin-right: 3.5rem;
+    }
+}
+
+.social-icon{
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+.social-icon-large{
+    width: 7rem;
+    margin-left: 1rem;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.15rem;
+    
+    &:hover{
+        text-decoration: underline;
+    }
+
+
+}
+
+.portrait{
+    height: 70vh;
+    background-image: url(/images/moi2.JPG);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: auto;
+
+    @include respond(tab-port) {
+        height: 40vh;
+    }
+}
+
+.main-row{
+    margin-bottom: 5rem;
+
+}

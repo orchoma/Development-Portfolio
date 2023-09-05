@@ -1,0 +1,229 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: "Poppins", sans-serif;
+}
+
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 75%;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 85%;
+  }
+}
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 100%;
+  }
+}
+
+body {
+  max-width: 90em;
+  margin: 0 auto;
+  background-color: rgb(246, 242, 238);
+}
+
+p {
+  line-height: 2.5rem;
+  margin: 2rem 0;
+  font-size: 1.15rem;
+}
+
+h1 {
+  letter-spacing: 0.4rem;
+  font-size: 2.25rem;
+}
+
+h2 {
+  letter-spacing: 0.2rem;
+  font-size: 1.75rem;
+}
+
+a {
+  color: black;
+}
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.row:not(:last-child) {
+  margin-bottom: 6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .row:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .row {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row [class^=col-] {
+  float: left;
+}
+.row [class^=col-]:not(:last-child) {
+  margin-right: 4rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .row [class^=col-]:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .row [class^=col-] {
+    width: 100% !important;
+  }
+}
+
+.col-1-of-2 {
+  width: calc((100% - 8rem) / 2);
+}
+
+.heading {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px black;
+  padding-bottom: 1.2rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .heading {
+    display: block;
+    text-align: center;
+    margin-top: 3rem;
+    border-bottom: none;
+  }
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+}
+.home-link:hover {
+  color: rgb(174, 174, 174);
+}
+
+.nav {
+  list-style-type: none;
+  text-align: right;
+}
+@media only screen and (max-width: 56.25em) {
+  .nav {
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.nav-item {
+  display: inline;
+}
+.nav-item:not(:last-child) {
+  margin-right: 3.5rem;
+}
+
+.social-icon {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.social-icon-large {
+  width: 7rem;
+  margin-left: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.15rem;
+}
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.portrait {
+  height: 70vh;
+  background-image: url(/images/moi2.JPG);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: auto;
+}
+@media only screen and (max-width: 56.25em) {
+  .portrait {
+    height: 40vh;
+  }
+}
+
+.main-row {
+  margin-bottom: 5rem;
+}
+
+.portfolio-item-1 {
+  background-image: url(/images/project.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+}
+@media only screen and (max-width: 56.25em) {
+  .portfolio-item-1 {
+    height: 30vh;
+  }
+}
+
+.portfolio-item-description {
+  margin-top: 6rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .portfolio-item-description {
+    margin-top: -4rem;
+    text-align: center;
+  }
+}
+
+.portfolio-link {
+  text-decoration: none;
+  border: solid black 1px;
+  padding: 0.5rem 0.75rem;
+}
+.portfolio-link:hover {
+  background-color: rgb(209, 203, 203);
+}
+.portfolio-link:not(:last-child) {
+  margin-right: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
