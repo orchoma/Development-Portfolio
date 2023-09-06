@@ -4,6 +4,9 @@
     align-items: center;
     border-bottom: solid 1px black;
     padding-bottom: 1.2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
 
 
     @include respond(tab-port) {
@@ -32,6 +35,8 @@
         text-align: center ;
         margin-top: -2rem;
         margin-bottom: 2rem;
+
+
     }
 }
 
@@ -74,7 +79,7 @@
     margin-bottom: auto;
 
     @include respond(tab-port) {
-        height: 40vh;
+        height: 50vh;
     }
 }
 

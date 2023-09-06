@@ -68,7 +68,7 @@ a {
 
 .row {
   max-width: 114rem;
-  margin: 0 auto;
+  margin: 0 2rem;
 }
 .row:not(:last-child) {
   margin-bottom: 6rem;
@@ -117,6 +117,8 @@ a {
   align-items: center;
   border-bottom: solid 1px black;
   padding-bottom: 1.2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 @media only screen and (max-width: 56.25em) {
   .heading {
@@ -183,7 +185,7 @@ a {
 }
 @media only screen and (max-width: 56.25em) {
   .portrait {
-    height: 40vh;
+    height: 50vh;
   }
 }
 
