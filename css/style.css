@@ -21,7 +21,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  font-family: "Poppins", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 @media only screen and (max-width: 75em) {
@@ -43,13 +43,18 @@ ORDER: Base + typography > general layout + grid > page layout > components
 body {
   max-width: 90em;
   margin: 0 auto;
-  background-color: rgb(246, 242, 238);
+  background-color: rgb(255, 255, 255);
 }
 
 p {
   line-height: 2.5rem;
   margin: 2rem 0;
   font-size: 1.15rem;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -68,7 +73,6 @@ a {
 
 .row {
   max-width: 114rem;
-  margin: 0 2rem;
 }
 .row:not(:last-child) {
   margin-bottom: 6rem;
@@ -115,7 +119,7 @@ a {
   margin-top: 4rem;
   display: flex;
   align-items: center;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px rgb(0, 0, 0);
   padding-bottom: 1.2rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -132,9 +136,19 @@ a {
 .home-link {
   text-decoration: none;
   color: black;
+  font-weight: 600;
+  font-size: 4rem;
 }
 .home-link:hover {
-  color: rgb(174, 174, 174);
+  color: rgb(255, 255, 255);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1.5px;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 56.25em) {
+  .home-link {
+    font-size: 2.5rem;
+  }
 }
 
 .nav {
@@ -170,6 +184,7 @@ a {
   text-decoration: none;
   color: black;
   font-size: 1.15rem;
+  font-family: "Poppins", sans-serif;
 }
 .nav-link:hover {
   text-decoration: underline;
@@ -177,7 +192,8 @@ a {
 
 .portrait {
   height: 70vh;
-  background-image: url(/images/moi2.JPG);
+  width: 90%;
+  background-image: url(/images/portrait.JPG);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -186,11 +202,31 @@ a {
 @media only screen and (max-width: 56.25em) {
   .portrait {
     height: 50vh;
+    width: 1000%;
   }
 }
 
 .main-row {
-  margin-bottom: 5rem;
+  margin-top: -2.5rem;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-size: 0.85rem;
+  margin-right: 1.2rem;
+  height: 65vh;
+  letter-spacing: 0.05rem;
+}
+@media only screen and (max-width: 56.25em) {
+  .vertical-text {
+    display: none;
+  }
+}
+
+.experiment {
+  display: flex;
 }
 
 .portfolio-item-1 {
@@ -220,9 +256,12 @@ a {
   text-decoration: none;
   border: solid black 1px;
   padding: 0.5rem 0.75rem;
+  text-transform: uppercase;
 }
 .portfolio-link:hover {
-  background-color: rgb(209, 203, 203);
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: 0.15s;
 }
 .portfolio-link:not(:last-child) {
   margin-right: 4rem;
