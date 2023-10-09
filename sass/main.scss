@@ -1,10 +1,23 @@
 @import "abstracts/mixins";
+@import "abstracts/variables";
+
 
 @import "base/base";
 @import "base/grid";
 
 
+@import "components/card";
+@import "components/mobilenav";
+
+
+
+@import "pages/about";
+@import "pages/contact";
+
+
 @import "pages/home";
 @import "pages/portfolio";
+
+
 
 

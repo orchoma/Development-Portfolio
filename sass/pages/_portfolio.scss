@@ -1,39 +1,52 @@
-.portfolio-item-1{
-    background-image: url(/images/project.png);
-    background-size: contain;
+
+
+.portfolio-title{
+    width: 20rem;
+    margin-bottom: -8rem;
+}
+
+.portfolio-link:hover{
+    filter: invert(.5) sepia(5) saturate(.5) ;
+
+}
+
+.portfolio-description{
+    margin: 2rem auto;
+    text-align: left;
+
+    @include respond(tab-port) {
+        width: 40rem;
+    }
+}
+
+
+.portfolio-card-1{
+    background-position: top;
+    background-size:contain;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 50vh;
 
     @include respond(tab-port) {
-        height: 30vh;
+        margin-bottom: -7rem;
+    }
+
+
+
+    
+}
+
+.portfolio-card-2{
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+
+    @include respond(tab-port) {
+        margin-bottom: -7rem;
     }
 
 }
 
-.portfolio-item-description{
-    margin-top: 6rem;
-
-    @include respond(tab-port) {
-        margin-top: -4rem;
-        text-align: center;
-    }
+.portfolio-card-3{
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
-
-.portfolio-link{
-
-    text-decoration: none;
-    border: solid black 1px;
-    padding: .50rem .75rem;
-    text-transform: uppercase;
-
-    &:hover{
-        background-color: rgb(0, 0, 0);
-        color: white;
-        transition: .15s;
-    }
-
-    &:not(:last-child) {
-        margin-right: 4rem;
-
-}}

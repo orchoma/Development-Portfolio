@@ -1,0 +1,26 @@
+
+.bio-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.bio{
+    width: 65%;
+    line-height: 3.2rem;
+    text-align: center;
+    font-size: 1.75rem;
+
+    @include respond(tab-port) {
+        width: 90%;
+        text-align: left;
+        line-height: 3rem;
+        margin-top: -4rem;
+    }
+
+
+}
+
+
+
