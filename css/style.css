@@ -478,10 +478,12 @@ input[type=text]:focus {
   padding: 1rem;
   border-radius: 50px;
   font-family: "Poppins", sans-serif;
+  background-color: rgb(231, 231, 231);
   border: none;
 }
 .submit-button:hover {
   background-color: white;
+  border: solid 0.5px black;
   cursor: pointer;
 }
 

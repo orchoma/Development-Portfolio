@@ -111,11 +111,14 @@ input[type=text]:focus {
     padding: 1rem;
     border-radius: 50px;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(231, 231, 231);
     border: none;
 
         &:hover{
             background-color: white;
+            border: solid .5px black;
             cursor: pointer;
         }
 
 }
+
