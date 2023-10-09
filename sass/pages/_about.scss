@@ -1,4 +1,11 @@
 
+.biopic-container{
+    display: flex;
+    justify-content: center;
+
+}
+
+
 .bio-container{
     display: flex;
     justify-content: center;
@@ -6,21 +13,32 @@
 }
 
 
-.bio{
-    width: 65%;
-    line-height: 3.2rem;
-    text-align: center;
-    font-size: 1.75rem;
+
+
+
+.biopic{
+    background-image: url(../../images/bw2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    width: 30vw;
 
     @include respond(tab-port) {
-        width: 90%;
-        text-align: left;
-        line-height: 3rem;
-        margin-top: -4rem;
+        width: 95%;
+        height: 45vh;
+        margin-bottom: 3rem;
     }
+
 
 
 }
 
+.bio{
+
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    margin-top: -2rem;
 
 
+}
