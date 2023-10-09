@@ -107,6 +107,7 @@ input[type=text]:focus {
 
 .submit-button{
     width: 90%;
+    color: black;
     margin: 1rem auto;
     padding: 1rem;
     border-radius: 50px;
@@ -118,6 +119,10 @@ input[type=text]:focus {
             background-color: white;
             border: solid .5px black;
             cursor: pointer;
+        }
+
+        @include respond(tab-port) {
+            padding: 2rem;
         }
 
 }

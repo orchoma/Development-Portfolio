@@ -146,8 +146,8 @@ a {
 }
 @media only screen and (max-width: 48.25em) {
   .card-img {
-    width: 55rem;
-    height: 55rem;
+    width: 45rem;
+    height: 45rem;
   }
 }
 
@@ -306,7 +306,7 @@ a {
   position: fixed;
   z-index: 120;
   top: 1rem;
-  right: 5rem;
+  right: 3rem;
   padding: 4px;
   background: transparent;
   cursor: pointer;
@@ -474,6 +474,7 @@ input[type=text]:focus {
 
 .submit-button {
   width: 90%;
+  color: black;
   margin: 1rem auto;
   padding: 1rem;
   border-radius: 50px;
@@ -485,6 +486,11 @@ input[type=text]:focus {
   background-color: white;
   border: solid 0.5px black;
   cursor: pointer;
+}
+@media only screen and (max-width: 48.25em) {
+  .submit-button {
+    padding: 2rem;
+  }
 }
 
 .header {
