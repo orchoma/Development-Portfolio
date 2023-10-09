@@ -489,13 +489,15 @@ input[type=text]:focus {
 }
 @media only screen and (max-width: 48.25em) {
   .submit-button {
-    padding: 2rem;
+    padding: 5rem;
   }
 }
 
 button {
-  padding: 3rem;
+  padding: 5rem;
   font-family: "Poppins", sans-serif;
+  font-style: none;
+  font-weight: 100;
 }
 
 .header {

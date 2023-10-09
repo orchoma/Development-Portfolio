@@ -122,13 +122,15 @@ input[type=text]:focus {
         }
 
         @include respond(tab-port) {
-            padding: 2rem;
+            padding: 5rem;
         }
 
 }
 
 button{
-    padding:3rem;
+    padding: 5rem;
     font-family: 'Poppins', sans-serif;
+    font-style: none;
+    font-weight: 100;
 
 }
