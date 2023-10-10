@@ -37,11 +37,11 @@ html {
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   letter-spacing: 0.15rem;
   padding: 2rem;
   font-family: "Baskervville", serif;
-  line-height: 2rem;
+  line-height: 2.5rem;
 }
 
 a {
@@ -292,7 +292,7 @@ a {
 
 .menuItem {
   display: block;
-  margin: 2rem 4rem;
+  margin: 3rem 4rem;
   font-size: 1.8rem;
   color: rgb(2, 2, 2);
   text-decoration: none;
@@ -351,14 +351,15 @@ a {
 
 .bio-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .biopic {
   background-image: url(../../images/bw2.jpg);
   background-position: center;
   background-size: cover;
-  height: 45vh;
+  height: 50vh;
   width: 30vw;
 }
 @media only screen and (max-width: 48.25em) {
@@ -368,12 +369,31 @@ a {
     margin-bottom: 3rem;
   }
 }
+@media only screen and (min-width: 112.5em) {
+  .biopic {
+    width: 30vw;
+    height: 55vh;
+  }
+}
 
 .bio {
   width: 100%;
   font-size: 1.5rem;
-  line-height: 5rem;
-  margin-top: -2rem;
+  line-height: 3.5rem;
+  border-bottom: 0.5px solid black;
+  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+}
+
+.quote {
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+}
+
+.emphasize {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 2rem;
 }
 
 .section-contact {
@@ -489,15 +509,8 @@ input[type=text]:focus {
 }
 @media only screen and (max-width: 48.25em) {
   .submit-button {
-    padding: 5rem;
+    padding: 2rem;
   }
-}
-
-button {
-  padding: 5rem;
-  font-family: "Poppins", sans-serif;
-  font-style: none;
-  font-weight: 100;
 }
 
 .header {
