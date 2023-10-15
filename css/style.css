@@ -292,10 +292,21 @@ a {
 
 .menuItem {
   display: block;
-  margin: 3rem 4rem;
+  margin: 4rem 4rem;
   font-size: 1.8rem;
   color: rgb(2, 2, 2);
   text-decoration: none;
+}
+
+.menuItem2 {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto;
+  padding-left: 1.75rem;
+  font-size: 1.8rem;
+  color: rgb(2, 2, 2);
+  text-decoration: none;
+  text-align: center;
 }
 
 .menuItem:hover {
@@ -332,7 +343,7 @@ a {
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   list-style: none;
-  padding-top: 35rem;
+  padding-top: 17rem;
   text-align: center;
 }
 
