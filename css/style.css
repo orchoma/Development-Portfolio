@@ -95,6 +95,11 @@ h2 {
   font-style: italic;
 }
 
+html, body {
+  width: auto !important;
+  overflow-x: hidden !important;
+}
+
 .row {
   max-width: 75%;
   margin: 0 auto;
@@ -489,8 +494,8 @@ nav {
 }
 
 .section-three {
-  height: 115vh;
-  width: 50vw;
+  height: 116vh;
+  width: 80vw;
   margin: 0 auto;
   padding-top: 10rem;
 }
