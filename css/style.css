@@ -74,7 +74,7 @@ p {
 }
 @media only screen and (max-width: 48.25em) {
   p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     line-height: 3.2rem;
   }
 }
@@ -182,6 +182,12 @@ html, body {
 
 .contact-form-container {
   width: 100%;
+}
+@media only screen and (max-width: 48.25em) {
+  .contact-form-container {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .contact-section {
@@ -501,9 +507,13 @@ nav {
 }
 @media only screen and (max-width: 48.25em) {
   .section-three {
-    width: 90vw;
+    width: 95vw;
     height: 140vh;
   }
+}
+
+.project-title {
+  margin-bottom: 1rem !important;
 }
 
 @media only screen and (max-width: 48.25em) {

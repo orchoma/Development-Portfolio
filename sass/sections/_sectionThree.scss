@@ -5,11 +5,16 @@
     padding-top: 10rem;
 
     @include respond(tab-port) { 
-        width: 90vw;
+        width: 95vw;
         height: 140vh; 
+
     }
 
 
+}
+
+.project-title{
+    margin-bottom: 1rem !important;
 }
 
 .project-description{
