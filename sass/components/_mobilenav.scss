@@ -1,12 +1,11 @@
-
-
 .mobile-nav{
 
   display: flex;
   flex-direction: row;
+  align-content: center;
   align-items: center;
-  padding-top: 2rem;
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  padding: 5rem;
 
     @include respond(tab-port-min) {
         display: none;
@@ -21,16 +20,6 @@
     text-decoration: none;
   }
 
-  .menuItem2 {
-    display: flex;
-    justify-content: center;
-    margin: 3rem auto;
-    padding-left: 1.75rem;
-    font-size: 1.8rem;
-    color: rgb(2, 2, 2);
-    text-decoration: none;
-    text-align: center;
-  }
   
   .menuItem:hover {
     text-decoration: underline;
@@ -39,9 +28,8 @@
   .hamburger {
     position: fixed;
     z-index: 120;
-    top: 1rem;
+    top: 3rem;
     right: 3rem;
-    padding: 4px;
     background: transparent;
 
     cursor: pointer;
@@ -81,11 +69,17 @@
   }
 
   .menuIcon{
-    color: rgb(118, 118, 118);
+    color: rgb(255, 255, 255);
+    scale: 1.2;
     
-
   }
   
+  .mobile-title{
+    font-size: 4rem;
+    letter-spacing: .5rem;
+}
 
-
+.mobile-logo{
+  width: 35px;
+}
 

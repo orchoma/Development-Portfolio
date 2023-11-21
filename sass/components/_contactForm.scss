@@ -1,0 +1,52 @@
+.contact-form-container {
+width: 100%;
+}
+
+.contact-section{
+    margin-bottom: 2rem;
+}
+
+.form-label{
+    display: block;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif; 
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+
+}
+
+.form-input{
+    width: 95%;
+    padding: 2rem 0rem 2rem 2rem;
+    font-family: 'Montserrat', sans-serif;   
+
+}
+
+
+.message-input{
+    width: 95%;
+    padding: 2rem 0rem 2rem 2rem;
+    height: 25vh;
+    font-family: 'Montserrat', sans-serif;   
+
+}
+
+.submit-button{
+    width: 95%;
+    padding: 1rem 0rem 1rem 2rem;
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent; 
+    color: white;
+    border: white solid .75px;
+    border-radius: 25px;
+
+}
+
+
+.submit-button:hover{
+    background-color: white;
+    color: black;
+    transition: .75s;
+    cursor: pointer;
+}

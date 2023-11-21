@@ -1,0 +1,45 @@
+.section-one{
+    height: 100vh;
+    margin: 0 auto;
+    width: 80vw;
+
+
+    @include respond(tab-port) { 
+        width: 90vw;
+        height: 120vh; 
+    }
+    
+}
+
+.title-container{
+    justify-content: flex-start !important;
+    align-items: center;
+
+    @include respond(tab-port) { 
+        margin-bottom: 4rem !important;
+    }
+}
+
+.learn-more{
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+.learn-more-icon{
+    margin-left: 2rem;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    float: right;
+    padding-top: .75rem;
+}
+
+.social-icon{
+    scale: 1.5;
+    margin-left: 3rem;
+
+}
+

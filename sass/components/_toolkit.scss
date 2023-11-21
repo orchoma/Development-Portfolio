@@ -1,0 +1,40 @@
+
+.toolkit{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.toolkit-title{
+    margin-bottom: 10rem !important;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tool-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+
+.tool-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: solid rgb(145, 145, 145) 1px;
+    height: 60px;
+    width: 175px;
+}
+
+
+.tool-icon{
+    scale: 2;
+    margin-right: 2rem;
+}
+

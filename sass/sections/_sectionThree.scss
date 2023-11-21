@@ -1,0 +1,36 @@
+.section-three{
+    height: 115vh;
+    width: 50vw;
+    margin: 0 auto;
+    padding-top: 10rem;
+
+    @include respond(tab-port) { 
+        width: 90vw;
+        height: 140vh; 
+    }
+
+
+}
+
+.project-description{
+
+    @include respond(tab-port) { 
+        width: 90vw;
+        
+    }
+}
+
+.portfolio-link{
+    margin-left: 2rem;
+    scale: .75;
+    transition: 0.3s;
+
+
+}
+
+.portfolio-link:hover{
+    color: rgb(108, 105, 106) !important;
+    transform: translate(0, -10px);
+
+}
+

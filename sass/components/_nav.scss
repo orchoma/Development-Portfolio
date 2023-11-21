@@ -1,0 +1,53 @@
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 10rem;
+    
+
+    @include respond(tab-port) {
+        display: none;
+    }
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.nav-link{
+    margin-right: 2rem;
+    padding-bottom: .5rem ;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: .3rem;
+    position: relative;
+
+}
+
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.icon{
+    width: 50px;
+}

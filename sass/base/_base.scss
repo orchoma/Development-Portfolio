@@ -9,18 +9,14 @@
 
 body{
     
-    box-sizing: border-box;
-    padding: 3rem;
-    font-family: 'Poppins', sans-serif;
-
+    font-family: 'Montserrat', sans-serif;   
+    color: white;
 
 
     @include respond(tab-port) {
         padding: 0;
     }
 }
-
-
 
 html {
     font-size: 62.5%;  
@@ -33,19 +29,42 @@ html {
     }
     
     @include respond(big-desktop) {
-        font-size: 75%; 
+        font-size: 70%; 
     }
+
+    background: radial-gradient(ellipse at bottom, #1B2735 45%, #090A0F 100%);
 }
 
 p{
-    font-size: 1.3rem; 
     letter-spacing: .15rem;
-    padding: 2rem;
-    font-family: 'Baskervville', serif;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif; 
+    line-height: 3rem;  
+
+
+    @include respond(tab-port) { 
+        font-size: 1.75rem;
+        line-height: 3.2rem;  
+
+    }
+
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
+
+h1{
+    letter-spacing: .5rem;
+    font-size: 3rem;
+}
+
+h2{
+    letter-spacing: .3rem;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+
+
