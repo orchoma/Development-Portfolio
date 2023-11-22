@@ -196,7 +196,7 @@ html, body {
 }
 
 .contact-section {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .form-label {
@@ -209,14 +209,14 @@ html, body {
 
 .form-input {
   width: 95%;
-  padding: 2rem 0rem 2rem 2rem;
+  padding: 1rem 0rem 1rem 2rem;
   font-family: "Montserrat", sans-serif;
 }
 
 .message-input {
   width: 95%;
   padding: 2rem 0rem 2rem 2rem;
-  height: 25vh;
+  height: 10vh;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -464,6 +464,7 @@ nav {
   height: 100vh;
   margin: 0 auto;
   width: 80vw;
+  padding: 12vh 0;
 }
 @media only screen and (max-width: 48.25em) {
   .section-one {

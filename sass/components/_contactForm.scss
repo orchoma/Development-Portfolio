@@ -1,5 +1,5 @@
 .contact-form-container {
-width: 100%;
+    width: 100%;
 
 @include respond(tab-port) { 
     width: 90%;
@@ -9,7 +9,7 @@ width: 100%;
 }
 
 .contact-section{
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .form-label{
@@ -23,7 +23,7 @@ width: 100%;
 
 .form-input{
     width: 95%;
-    padding: 2rem 0rem 2rem 2rem;
+    padding: 1rem 0rem 1rem 2rem;
     font-family: 'Montserrat', sans-serif;   
 
 }
@@ -32,7 +32,7 @@ width: 100%;
 .message-input{
     width: 95%;
     padding: 2rem 0rem 2rem 2rem;
-    height: 25vh;
+    height: 10vh;
     font-family: 'Montserrat', sans-serif;   
 
 }
