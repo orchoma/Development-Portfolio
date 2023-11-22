@@ -38,3 +38,36 @@ if (elementsToFadeInUpOnScroll) {
     });
   });
 }
+
+
+$(document).ready(function() {
+ 	
+  var numbClick = 1;
+  
+  $('a[href*="#scrolldown"]').click(function(){
+    
+    var elemToGo = $(this).attr('href');
+    var speed = 750;
+    
+    if(numbClick!=0){
+      elemToGo += numbClick;
+       if(!$(elemToGo).length){ // if the section #sectionAnyNumber doesn't exist, then.
+         elemToGo = "#scrolldown"; //I put back the first section.
+         numbClick=0; //I reinit the the value of number of click.
+       }
+    }
+    
+    numbClick++;
+   
+    $('html,body').animate(
+    {
+      scrollTop: $(elemToGo).offset().top
+    },speed
+    );
+    return false;
+  });
+  
+  
+  
+
+});

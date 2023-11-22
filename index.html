@@ -37,7 +37,7 @@
   
   <!----- HEADER: NAVIGATION  ------>
 
-  <div class="header fade-in" id="header">
+  <div class="header fade-in" id="scrolldown">
 
     <a class="skip-link" href='#portfolio'>Skip to content</a>
 
@@ -88,7 +88,7 @@
 
   <!---- SECTION ONE: BIO ----->
 
-  <div class="section-one fade-in" id="about" aria-label="About">  
+  <div class="section-one fade-in"  aria-label="About">  
 
 
     <div class="row title-container"> 
@@ -100,7 +100,7 @@
     <div class="row">
 
 
-      <div class="bio">
+      <div class="bio" id="#about">
         <p>
           My name is Olivia Choma. 
           I am a junior software engineer, ui/ux designer, and artist with a passion 
@@ -140,7 +140,9 @@
     
     </div>
 
-    <div class="row chevron-container" > <a href=#toolkit role="button"><i class="fa-solid fa-chevron-down fa-beat-fade fa-lg chevron-icon" style="color: #ffffff;" aria-hidden="true"></i></a> </div>
+
+    <a href=#scrolldown><i class="fa-solid fa-chevron-down fa-beat-fade fa-lg chevron-icon" style="color: #ffffff;" aria-hidden="true"></i></a>
+
 
   </div>
 
@@ -152,7 +154,7 @@
 
 
 
-  <div class="section-two fade-in-up-on-scroll" id="toolkit" aria-label="Toolkit">
+  <div class="section-two fade-in-up-on-scroll" id="scrolldown1" aria-label="Toolkit">
 
 
 
@@ -162,7 +164,7 @@
 
     
 
-          <div class="toolkit">
+          <div class="toolkit" >
 
   
               <div class="tool-card"><i class="fab fa-node-js fa-fw tool-icon" style="color: #000000;" aria-hidden="true"></i> <p> NODE JS</p></div>
@@ -209,7 +211,6 @@
 
         </div>
 
-    <div class="row chevron-container"> <a href=#portfolio role="button"><i class="fa-solid fa-chevron-down fa-beat-fade fa-lg chevron-icon" style="color: #ffffff;" aria-hidden="true"></i></a> </div>
 
       
 
@@ -219,9 +220,9 @@
 
   <!-------- SECTION THREE: PORTFOLIO ------->
 
-  <div class="section-three fade-in-up-on-scroll" id="portfolio" aria-label="Portfolio">
+  <div class="section-three fade-in-up-on-scroll" id="scrolldown2" aria-label="Portfolio">
 
-    <div class="row title-container"> 
+    <div class="row title-container" > 
       <h2> MY WORK </h2>
     </div>
 
@@ -256,7 +257,6 @@
 
 
     
-    <div class="row chevron-container"> <a href=#contact role="button"><i class="fa-solid fa-chevron-down fa-beat-fade fa-lg chevron-icon" style="color: #ffffff;" aria-hidden="true"></i></a> </div>
 
 
 
@@ -265,14 +265,14 @@
 
   <!----SECTION FOUR: CONTACT -->
 
-  <div class="section-four fade-in-up-on-scroll" id="contact" aria-label="Contact Form">
+  <div class="section-four fade-in-up-on-scroll"  id="scrolldown3" aria-label="Contact Form">
 
 
     <div class="row title-container"> 
-      <h2> CONTACT </h2>
+      <h2> CONTACT </h2> 
     </div>
 
-      <div class="contact-form-container row"> 
+      <div class="contact-form-container row" > 
       <form name="contact" class="contact-form" method="POST" data-netlify="true" role="form" aria-label="Contact Form">
 
           <div class="contact-section">
@@ -325,6 +325,9 @@
 
 
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/jquery-1.11.2.min.js"></script>
 
 <script src="script.js"></script>
 
