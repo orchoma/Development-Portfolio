@@ -5,6 +5,8 @@
 
 
     @include respond(tab-port) { 
+
+        padding: 3vh 0;
         width: 90vw;
         height: 120vh; 
     }

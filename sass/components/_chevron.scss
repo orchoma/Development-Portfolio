@@ -1,7 +1,7 @@
 .chevron-container{
     display: flex;
     justify-content: center;
-    margin-top: 17rem !important;
+    padding-top: 6rem;
 
     @include respond(tab-port) {
         display: none;

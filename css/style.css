@@ -68,7 +68,7 @@ html {
 
 p {
   letter-spacing: 0.15rem;
-  font-size: 1.5rem;
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
   line-height: 3rem;
 }
@@ -167,7 +167,7 @@ html, body {
 .chevron-container {
   display: flex;
   justify-content: center;
-  margin-top: 17rem !important;
+  padding-top: 6rem;
 }
 @media only screen and (max-width: 48.25em) {
   .chevron-container {
@@ -332,7 +332,7 @@ nav {
   padding-bottom: 0.5rem;
   color: white;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   letter-spacing: 0.3rem;
   position: relative;
 }
@@ -356,6 +356,25 @@ nav {
 
 .icon {
   width: 50px;
+}
+
+.skip-link {
+  background: #ffffff;
+  color: #000000;
+  font-weight: 700;
+  left: 50%;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-100%);
+}
+
+.skip-link:focus {
+  transform: translateY(0%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
 }
 
 .toolkit {
@@ -428,7 +447,7 @@ nav {
 }
 
 .header {
-  margin-bottom: 6rem;
+  margin: auto;
 }
 
 .logo {
@@ -442,6 +461,7 @@ nav {
 }
 @media only screen and (max-width: 48.25em) {
   .section-one {
+    padding: 3vh 0;
     width: 90vw;
     height: 120vh;
   }
