@@ -371,7 +371,7 @@ nav {
   left: 50%;
   padding: 4px;
   position: absolute;
-  transform: translateY(-100%);
+  transform: translateY(-600%);
 }
 
 .skip-link:focus {
@@ -454,6 +454,13 @@ nav {
 
 .header {
   margin: auto;
+  width: 90vw;
+}
+@media only screen and (min-width: 125.5em) {
+  .header {
+    width: 70vw;
+    margin-top: 6rem;
+  }
 }
 
 .logo {
@@ -471,6 +478,12 @@ nav {
     padding: 3vh 0;
     width: 90vw;
     height: 120vh;
+  }
+}
+@media only screen and (min-width: 125.5em) {
+  .section-one {
+    width: 50vw;
+    padding: 12vh 0;
   }
 }
 
@@ -537,6 +550,11 @@ nav {
     height: 140vh;
   }
 }
+@media only screen and (min-width: 125.5em) {
+  .section-three {
+    width: 60vw;
+  }
+}
 
 .project-title {
   margin-bottom: 1rem !important;
@@ -568,6 +586,11 @@ nav {
 @media only screen and (max-width: 48.25em) {
   .section-four {
     width: 100vw;
+  }
+}
+@media only screen and (min-width: 125.5em) {
+  .section-four {
+    width: 55vw;
   }
 }
 

@@ -1,5 +1,13 @@
 .header{
-    margin:auto
+    margin:auto;
+    width: 90vw;
+
+    @include respond(big-desktop) {
+        width: 70vw;
+        margin-top: 6rem;
+
+    }
+
 }
 
 .logo{

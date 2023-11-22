@@ -8,5 +8,11 @@
     @include respond(tab-port) { 
         width: 100vw; 
     }
+
+    @include respond(big-desktop) { 
+        width: 55vw;
+        
+
+    }
     
 }

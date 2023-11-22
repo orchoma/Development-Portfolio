@@ -11,6 +11,13 @@
         width: 90vw;
         height: 120vh; 
     }
+
+    @include respond(big-desktop) { 
+        width: 50vw;
+        padding: 12vh 0;
+
+        
+    }
     
 }
 
