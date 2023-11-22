@@ -464,7 +464,7 @@ nav {
   height: 100vh;
   margin: 0 auto;
   width: 80vw;
-  padding: 5vh 0;
+  padding: 2vh 0;
 }
 @media only screen and (max-width: 48.25em) {
   .section-one {
