@@ -32,6 +32,16 @@
     border: solid rgb(145, 145, 145) 1px;
     height: 60px;
     width: 175px;
+
+
+    @include respond(big-desktop) {
+        width: 250px ;
+        height: 80px;
+
+    }
+
+
+
 }
 
 

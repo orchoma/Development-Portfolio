@@ -39,12 +39,18 @@ p{
     letter-spacing: .15rem;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif; 
-    line-height: 3rem;  
+    line-height: 3.5rem;  
 
 
     @include respond(tab-port) { 
         font-size: 1.5rem;
         line-height: 3.2rem;  
+    }
+
+
+    @include respond(big-desktop) {
+        font-size: 20px;
+        line-height: 4rem;  
 
     }
 
@@ -62,6 +68,10 @@ h1{
 
 h2{
     letter-spacing: .3rem;
+    font-size: 3rem;
+}
+
+h3{
     font-size: 2rem;
 }
 

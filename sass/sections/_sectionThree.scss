@@ -1,36 +1,78 @@
 .section-three{
-    height: 100vh;
-    width: 80vw;
+    width: 60vw;
     margin: 0 auto;
-    padding-top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+
 
     @include respond(tab-port) { 
-        width: 95vw;
-        height: 140vh; 
-
+        width: 80vw;
     }
+
+
 
     @include respond(big-desktop) { 
-        width: 60vw;
-
+        width: 50vw;
     }
 
 
 
 
+}
+
+
+.portfolio-title-container{
+    margin-bottom: 10rem;
+    -webkit-box-reflect: below -8px linear-gradient(transparent, #211e1e2e);
+
+}
+
+
+.project-image{
+    width: 100%;
+    border-radius: 15px;
+    transition: all .5s;
+}
+
+
+
+.image-text{
+    display: none;
+    font-size: 3rem;
+    line-height: 5rem;
+}
+
+.image-container{
+    overflow: hidden;
+    position: relative;
+
+
+    &:hover .project-image{
+        transform: scale(1.5);
+        overflow: hidden;
+        filter: blur(3px) brightness(30%);
+    }
+
+    &:hover .image-text{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+    }
 }
 
 .project-title{
     margin-bottom: 1rem !important;
+
 }
 
-.project-description{
 
-    @include respond(tab-port) { 
-        width: 90vw;
-        
-    }
-}
 
 .portfolio-link{
     margin-left: 2rem;
@@ -43,6 +85,7 @@
 .portfolio-link:hover{
     color: rgb(108, 105, 106) !important;
     transform: translate(0, -10px);
+    cursor: pointer;
 
 }
 

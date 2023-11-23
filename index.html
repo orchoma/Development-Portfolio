@@ -39,6 +39,9 @@
 
   <div class="header fade-in" id="scrolldown">
 
+    <div id="header">
+    </div>
+
     <a class="skip-link" href='#portfolio'>Skip to content</a>
 
 
@@ -89,14 +92,18 @@
 
   <div class="section-one fade-in" id="about" aria-label="About">  
 
-
-    <div class="row title-container"> 
-      <h1 class="title"> LIVY</h1>
+    <div class="wrapper ten"> 
+      <div class="bounce"> 
+        <span>L</span>
+        <span>I</span>
+        <span>V</span>
+        <span>Y</span>
+      </div>
     </div>
 
 
 
-    <div class="row">
+    <div>
 
 
       <div class="bio" id="#about">
@@ -121,11 +128,13 @@
 
     </div>
 
-    <div class="row bio-footer"> 
+
+    <div class="bio-footer"> 
+
 
       <div class="learn-more">
-      <p> LEARN MORE </p> <a href="images/ChomaCV.pdf" target="_blank" role="button"> 
-      <i class="fa-solid fa-arrow-right fa-beat-fade fa-lg learn-more-icon" style="color: #ffffff;" aria-hidden="true"></i> </a> 
+        <p> LEARN MORE </p> <a href="images/ChomaCV.pdf" target="_blank" role="button"> 
+        <i class="fa-solid fa-arrow-right fa-beat-fade fa-lg learn-more-icon" style="color: #ffffff;" aria-hidden="true"></i> </a> 
       </div>
 
 
@@ -136,8 +145,9 @@
         <a href="https://dribbble.com/" role="button"><i class="fa-solid fa-basketball fa-lg social-icon" style="color: #ffffff;" aria-hidden="true"></i></a>
       </div>
 
-    
     </div>
+
+    
 
 
     <a href=#scrolldown><i class="fa-solid fa-chevron-down fa-beat-fade fa-lg chevron-icon" style="color: #ffffff;" aria-hidden="true"></i></a>
@@ -221,39 +231,60 @@
 
   <div class="section-three fade-in-up-on-scroll" id="scrolldown2" aria-label="Portfolio">
 
-    <div class="row title-container" id="portfolio"> 
+    <div class="portfolio-title-container" id="portfolio"> 
       <h2> MY WORK </h2>
     </div>
 
 
+    <div class="project row"> 
 
-    <h2 class="row title-container project-title"> CHECK MATE <a href="https://checkmate-app-client-ohv93.kinsta.app/" target="_blank" role="button"><i class="fa-solid fa-arrow-up-right-from-square fa-lg portfolio-link" style="color: #ffffff;" aria-hidden="true"></i></a> </h2>
+      <div class="col-1-of-2 image-container"> <img class="project-image" src="images/checkmate.png"/> <p class="image-text">REACT,  JSNODE,  POSTGRESQL</p></div>
 
-    <p class="row project-description"> A REACT JS task management application with authenticated login 
-            and full CRUD implementation. Create tasks, set and adjust their 
-            level of progress, and check tasks off your list as you complete them. </p>
+      <div class="col-1-of-2"> 
+
+        <h3 class="project-title"> CHECK MATE <a href="https://checkmate-app-client-ohv93.kinsta.app/" target="_blank" role="button"><i class="fa-solid fa-arrow-up-right-from-square fa-lg portfolio-link" style="color: #ffffff;" aria-hidden="true"></i></a> </h3>
+
+        <p class="project-description"> A REACT JS task management application with authenticated login 
+                and full CRUD implementation. Create tasks, set and adjust their 
+                level of progress, and check tasks off your list as you complete them. </p>
+
+      </div>
+
+    </div>
 
 
+    <div class="project row"> 
 
+      <div class="col-1-of-2 image-container"> <img class="project-image" src="images/prattle.png"/> <p class="image-text">REACT, NODEJS, JSON SERVER </p></div>
 
+      <div class="col-1-of-2 project-words"> 
 
-    <h2 class="row title-container project-title"> PRATTLE  <a href="https://github.com/orchoma/prattle" target="_blank" role="button"><i class="fa-solid fa-arrow-up-right-from-square fa-lg portfolio-link" style="color: #ffffff;" aria-hidden="true"></i></a> </h2>
+        <h3 class="project-title"> PRATTLE  <a href="https://github.com/orchoma/prattle" target="_blank" role="button"><i class="fa-solid fa-arrow-up-right-from-square fa-lg portfolio-link" style="color: #ffffff;" aria-hidden="true"></i></a> </h3>
 
-    <p class="row project-description"> The Front End Interface of A REACT JS message sharing app modeled on META's Threads Application. 
-      Post Messages to a public feed, and like and comment on posts as you browse. </p>
+        <p class="project-description"> The Front End Interface of A REACT JS message sharing app modeled on META's Threads Application. 
+          Post Messages to a public feed, and like and comment on posts as you browse. </p>
+
+      </div>
+
+    </div>
 
     
+    <div class="project row"> 
+
+      <div class="col-1-of-2 image-container"> <img class="project-image" src="images/barnabas.png"/><p class="image-text">SQUARESPACE, ADOBE ILLUSTRATOR</p> </div>
+
+      <div class="col-1-of-2"> 
+
+        <h3 class="project-title"> BARNABAS <a href="https://www.barnabascommunications.com/" target="_blank" role="button"><i class="fa-solid fa-arrow-up-right-from-square fa-lg portfolio-link" style="color: #ffffff;" aria-hidden="true"></i></a> </h3>
+
+        <p class="project-description"> Website and branding for Barnabas Communications, a multimedia platform dedicated to sharing 
+          insights and resources for self improvement and personal achieviement. </p>
+      
+      </div>
+
+    </div>
+
     
-    <h2 class="row title-container project-title"> BARNABAS <a href="https://www.barnabascommunications.com/" target="_blank" role="button"><i class="fa-solid fa-arrow-up-right-from-square fa-lg portfolio-link" style="color: #ffffff;" aria-hidden="true"></i></a> </h2>
-
-    <p class="row project-description"> Website and branding for Barnabas Communications, a multimedia platform dedicated to sharing 
-      insights and resources for self improvement and personal achieviement. </p>
-
-    <h2 class="row title-container project-title"> MOKOSH CREATIVE<a href="https://www.mokoshcreative.com/" target="_blank" role="button"><i class="fa-solid fa-arrow-up-right-from-square fa-lg portfolio-link" style="color: #ffffff;" aria-hidden="true" ></i></a> </h2>
-
-    <p class="row project-description"> Website and branding for a multimedia art and production company built with the Squarespce content management system </p>
-
-
 
     
 
