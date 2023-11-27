@@ -42,13 +42,21 @@
 
 .image-text{
     display: none;
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 5rem;
 }
+
+.image-sub-text{
+    display: none;
+    font-size: 1rem;
+
+}
+
 
 .image-container{
     overflow: hidden;
     position: relative;
+    cursor: pointer;
 
 
     &:hover .project-image{
@@ -63,7 +71,14 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
 
+    &:hover .image-sub-text{
+        display: block;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 

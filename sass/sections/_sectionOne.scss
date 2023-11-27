@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 15rem 0rem;
+    padding: 5rem 0rem;
 
 
     @include respond(tab-port) { 
@@ -17,6 +17,8 @@
 
     @include respond(big-desktop) { 
         width: 55vw;
+        padding: 15rem 0rem;
+
 
         
     }
@@ -70,3 +72,5 @@
     @include respond(big-desktop) { 
         width: 55vw;
 }}
+
+

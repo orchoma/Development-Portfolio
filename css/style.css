@@ -9,7 +9,7 @@
   }
 }
 .fade-in-up {
-  animation: 0.75s both fadeInUp;
+  animation: 1.25s both fadeInUp;
 }
 
 .fade-in {
@@ -528,7 +528,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 15rem 0rem;
+  padding: 5rem 0rem;
 }
 @media only screen and (max-width: 48.25em) {
   .section-one {
@@ -539,6 +539,7 @@ nav {
 @media only screen and (min-width: 125.5em) {
   .section-one {
     width: 55vw;
+    padding: 15rem 0rem;
   }
 }
 
@@ -648,13 +649,19 @@ nav {
 
 .image-text {
   display: none;
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 5rem;
+}
+
+.image-sub-text {
+  display: none;
+  font-size: 1rem;
 }
 
 .image-container {
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 .image-container:hover .project-image {
   transform: scale(1.5);
@@ -665,6 +672,13 @@ nav {
   display: block;
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image-container:hover .image-sub-text {
+  display: block;
+  position: absolute;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
