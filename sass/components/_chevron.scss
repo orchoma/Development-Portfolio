@@ -1,7 +1,7 @@
 .chevron-container{
     position: relative;
-    bottom: 0;
     left: 50%;
+    bottom: 0;
     width: 40px;
     height: 40px;
     cursor:pointer;
@@ -13,12 +13,13 @@
 
 
 .chevron-icon {
-    position: fixed;
     scale: 3;
-    bottom: 0;
-    left: 50%;
     width: 10px;
     height: 20px;
+    bottom: 0;
+    left: 50%;
     cursor:pointer;
     z-index: 1000000000000000;
-  }
+}
+
+

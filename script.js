@@ -5,6 +5,8 @@ const hamburger= document.querySelector(".hamburger");
 const closeIcon= document.querySelector(".closeIcon");
 const menuIcon = document.querySelector(".menuIcon");
 
+
+
 function toggleMenu() {
   if (menu.classList.contains("showMenu")) {
     menu.classList.remove("showMenu");
@@ -40,34 +42,30 @@ if (elementsToFadeInUpOnScroll) {
 }
 
 
-$(document).ready(function() {
- 	
-  var numbClick = 1;
-  
-  $('a[href*="#scrolldown"]').click(function(){
-    
-    var elemToGo = $(this).attr('href');
-    var speed = 750;
-    
-    if(numbClick!=0){
-      elemToGo += numbClick;
-       if(!$(elemToGo).length){ // if the section #sectionAnyNumber doesn't exist, then.
-         elemToGo = "#scrolldown"; //I put back the first section.
-         numbClick=0; //I reinit the the value of number of click.
-       }
-    }
-    
-    numbClick++;
-   
-    $('html,body').animate(
-    {
-      scrollTop: $(elemToGo).offset().top
-    },speed
-    );
-    return false;
-  });
-  
-  
-  
 
-});
+document.getElementById('scrollBtn1').addEventListener('click', function() {
+  document.querySelector('.main-content:nth-of-type(2)').scrollIntoView({ 
+      behavior: 'smooth' 
+  });
+})
+
+
+document.getElementById('scrollBtn2').addEventListener('click', function() {
+  document.querySelector('.main-content:nth-of-type(3)').scrollIntoView({ 
+      behavior: 'smooth' 
+  });
+})
+
+
+document.getElementById('scrollBtn3').addEventListener('click', function() {
+  document.querySelector('.main-content:nth-of-type(4)').scrollIntoView({ 
+      behavior: 'smooth' 
+  });
+})
+
+
+document.getElementById('scrollBtn4').addEventListener('click', function() {
+  document.querySelector('.main-content:nth-of-type(1)').scrollIntoView({ 
+      behavior: 'smooth' 
+  });
+})
