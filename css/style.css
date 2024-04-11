@@ -587,10 +587,8 @@ nav {
 }
 
 .section-two {
-  height: 100vh;
   width: 100vw;
-  margin: 0 auto;
-  margin-bottom: 10rem;
+  margin: 30rem auto 50rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -613,7 +611,7 @@ nav {
 
 .section-three {
   width: 60vw;
-  margin: 0 auto;
+  margin: 30rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -621,7 +619,8 @@ nav {
 }
 @media only screen and (max-width: 48.25em) {
   .section-three {
-    width: 80vw;
+    width: 65vw;
+    margin: 15rem auto;
   }
 }
 @media only screen and (min-width: 125.5em) {
@@ -656,6 +655,7 @@ nav {
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  border-radius: 15px;
 }
 .image-container:hover .project-image {
   transform: scale(1.5);
@@ -687,16 +687,25 @@ nav {
   transition: 0.3s;
 }
 
+.portfolio-link2 {
+  transition: 0.3s;
+}
+
 .portfolio-link:hover {
   color: rgb(108, 105, 106) !important;
   transform: translate(0, -10px);
   cursor: pointer;
 }
 
+.portfolio-link2:hover {
+  color: rgb(108, 105, 106) !important;
+  transform: translate(0, -10px);
+  cursor: pointer;
+}
+
 .section-four {
-  height: 100vh;
   width: 70vw;
-  margin: 0 auto;
+  margin: 30rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -1,6 +1,6 @@
 .section-three{
     width: 60vw;
-    margin: 0 auto;
+    margin: 30rem auto;
 
     display: flex;
     flex-direction: column;
@@ -10,7 +10,9 @@
 
 
     @include respond(tab-port) { 
-        width: 80vw;
+        width: 65vw;
+        margin: 15rem auto;
+
     }
 
 
@@ -57,6 +59,7 @@
     overflow: hidden;
     position: relative;
     cursor: pointer;
+    border-radius: 15px;
 
 
     &:hover .project-image{
@@ -97,7 +100,21 @@
 
 }
 
+
+.portfolio-link2{
+    transition: 0.3s;
+
+
+}
+
 .portfolio-link:hover{
+    color: rgb(108, 105, 106) !important;
+    transform: translate(0, -10px);
+    cursor: pointer;
+
+}
+
+.portfolio-link2:hover{
     color: rgb(108, 105, 106) !important;
     transform: translate(0, -10px);
     cursor: pointer;
