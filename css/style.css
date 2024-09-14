@@ -109,6 +109,18 @@ html, body {
   overflow-x: hidden !important;
 }
 
+.bg {
+  background-image: url(../../images/floral.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title-spacing {
+  letter-spacing: 0.75rem;
+}
+
 .row {
   margin: 0 auto;
 }
@@ -129,12 +141,12 @@ html, body {
   float: left;
 }
 .row [class^=col-]:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 0rem;
 }
 @media only screen and (max-width: 48.25em) {
   .row [class^=col-]:not(:last-child) {
     margin-right: 0;
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
   }
 }
 @media only screen and (max-width: 48.25em) {
@@ -143,23 +155,23 @@ html, body {
   }
 }
 .row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
+  width: calc((100% - 16rem) / 2);
 }
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
+  width: calc((100% - 2 * 0rem) / 3);
   margin: 0 auto;
 }
 .row .col-2-of-3 {
-  width: calc(2 * ((100% - 2 * 6rem) / 3) + 6rem);
+  width: calc(2 * ((100% - 2 * 0rem) / 3) + 0rem);
 }
 .row .col-1-of-4 {
   width: calc((100% - 18rem) / 4);
 }
 .row .col-2-of-4 {
-  width: calc(2 * ((100% - 3 * 6rem) / 4) + 6rem);
+  width: calc(2 * ((100% - 3 * 0rem) / 4) + 0rem);
 }
 .row .col-3-of-4 {
-  width: calc(3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem);
+  width: calc(3 * ((100% - 3 * 0rem) / 4) + 2 * 0rem);
 }
 
 .chevron-container {
@@ -183,7 +195,7 @@ html, body {
 }
 
 .contact-form-container {
-  width: 70%;
+  width: 100%;
 }
 
 .contact-section {
@@ -332,7 +344,7 @@ nav {
   color: white;
   text-decoration: none;
   font-size: 1.5rem;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.45rem;
   position: relative;
 }
 
@@ -466,6 +478,8 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 10rem;
+  width: 60vw;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 48.25em) {
   .footer {
@@ -497,8 +511,8 @@ nav {
 }
 
 .header {
-  margin: auto;
-  width: 70vw;
+  margin: 0 auto -3rem auto;
+  width: 60vw;
 }
 @media only screen and (max-width: 48.25em) {
   .header {
@@ -517,23 +531,24 @@ nav {
 
 .section-one {
   margin: 0 auto;
-  width: 65vw;
+  width: 60vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: flex-start;
-  padding: 5rem 0rem;
+  padding: 10rem 0rem 0rem 0rem;
 }
 @media only screen and (max-width: 48.25em) {
   .section-one {
     width: 80vw;
     padding: 0rem 0rem;
+    margin-top: 5rem;
   }
 }
 @media only screen and (min-width: 125.5em) {
   .section-one {
-    width: 55vw;
-    padding: 15rem 0rem;
+    width: 60vw;
+    padding: 10rem 0rem;
   }
 }
 
@@ -544,7 +559,6 @@ nav {
 .title-container {
   justify-content: flex-start !important;
   align-items: center;
-  -webkit-box-reflect: below -8px linear-gradient(transparent, rgba(33, 30, 30, 0.1803921569));
 }
 @media only screen and (max-width: 48.25em) {
   .title-container {
@@ -571,14 +585,35 @@ nav {
   margin-left: 3rem;
 }
 
-.bio {
-  padding-bottom: 4rem;
+.profile-pic {
+  width: 100%;
+  height: auto;
 }
 
+.pic-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 48.25em) {
+  .pic-container {
+    width: 80vw;
+    height: 300px;
+    margin: 0rem auto 2rem auto;
+    border-radius: 0%;
+  }
+}
+
+.bio {
+  margin: 0 auto;
+  justify-content: center;
+}
 .bio-footer {
+  margin-top: 2rem;
   display: flex;
   justify-content: space-between;
-  width: 65vw;
 }
 @media only screen and (min-width: 125.5em) {
   .bio-footer {
@@ -611,27 +646,26 @@ nav {
 
 .section-three {
   width: 60vw;
-  margin: 30rem auto;
+  margin: 10rem auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
 }
 @media only screen and (max-width: 48.25em) {
   .section-three {
-    width: 65vw;
+    width: 80vw;
     margin: 15rem auto;
   }
 }
 @media only screen and (min-width: 125.5em) {
   .section-three {
-    width: 50vw;
+    width: 60vw;
   }
 }
 
 .portfolio-title-container {
   margin-bottom: 10rem;
-  -webkit-box-reflect: below -8px linear-gradient(transparent, rgba(33, 30, 30, 0.1803921569));
 }
 
 .project-image {
@@ -704,22 +738,26 @@ nav {
 }
 
 .section-four {
-  width: 70vw;
-  margin: 30rem auto;
+  width: 60vw;
+  margin: 15rem auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 @media only screen and (max-width: 48.25em) {
   .section-four {
-    width: 90vw;
+    width: 80vw;
   }
 }
 @media only screen and (min-width: 125.5em) {
   .section-four {
-    width: 50vw !important;
+    width: 60vw !important;
   }
+}
+
+.contact-title {
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */

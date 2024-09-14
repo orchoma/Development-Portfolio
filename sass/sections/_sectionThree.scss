@@ -1,16 +1,16 @@
 .section-three{
     width: 60vw;
-    margin: 30rem auto;
+    margin: 10rem auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: flex-start;
 
 
 
     @include respond(tab-port) { 
-        width: 65vw;
+        width: 80vw;
         margin: 15rem auto;
 
     }
@@ -18,7 +18,7 @@
 
 
     @include respond(big-desktop) { 
-        width: 50vw;
+        width: 60vw;
     }
 
 
@@ -29,7 +29,6 @@
 
 .portfolio-title-container{
     margin-bottom: 10rem;
-    -webkit-box-reflect: below -8px linear-gradient(transparent, #211e1e2e);
 
 }
 

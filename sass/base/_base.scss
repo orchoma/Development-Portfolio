@@ -7,6 +7,7 @@
 }
 
 
+
 body{
     
     font-family: 'Montserrat', sans-serif;   
@@ -78,3 +79,14 @@ h3{
 
 html, body {width: auto!important; overflow-x: hidden!important} 
 
+.bg{
+    background-image: url(../../images/floral.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title-spacing{
+    letter-spacing: 0.75rem;
+}

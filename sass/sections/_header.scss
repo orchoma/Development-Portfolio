@@ -1,6 +1,6 @@
 .header{
-    margin:auto;
-    width: 70vw;
+    margin: 0 auto -3rem auto;
+    width: 60vw;
 
     @include respond(tab-port) { 
         width: 100vw;

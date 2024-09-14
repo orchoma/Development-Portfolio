@@ -1,21 +1,25 @@
 .section-four{
-    width: 70vw;
-    margin: 30rem auto;
+    width: 60vw;
+    margin: 15rem auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     
 
     @include respond(tab-port) { 
-        width: 90vw; 
+        width: 80vw; 
     }
 
     @include respond(big-desktop) { 
-        width: 50vw !important; 
+        width: 60vw !important; 
     }
 
 
     
+}
+
+.contact-title{
+    text-align: left;
 }
